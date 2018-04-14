@@ -30,7 +30,7 @@ class SongsController < ApplicationController
     else
       @song = Song.new(artist_id: params[:artist_id])
     end
-end
+  end
 
   def create
     @song = Song.new(song_params)
